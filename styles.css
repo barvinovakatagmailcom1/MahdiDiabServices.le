@@ -1,0 +1,115 @@
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Вимикає прокручування */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Включає padding в розрахунок ширини */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрує вміст по вертикалі */
+  align-items: center; /* Центрує вміст по горизонталі */
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+.service-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fc0606;
+  color: rgb(16, 15, 15);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 20px;
+}
+
+.service-button:hover {
+  background-color: #b6bcbc;
+  transform: scale(1.1);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Дозволяє прокручувати картинку */
+  flex-direction: column;
+}
+
+main img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.back-btn {
+  display: none; /* Приховуємо кнопку повернення на головній сторінці */
+  padding: 10px 20px;
+  background-color: #d20c0c;
+  color: #4c4a4a;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Відображення кнопки повернення та приховування елементів на інших сторінках */
+body.other-page #header, 
+body.other-page nav, 
+body.other-page #serviceText {
+  display: none;
+}
+
+body.other-page .back-btn {
+  display: inline-block;
+}
+
+#serviceText {
+  text-align: center; /* Центрує текст */
+  margin-top: -20px; /* Додає верхній відступ */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
