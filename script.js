@@ -1,7 +1,7 @@
 function showService(serviceName, imagePath) {
     document.body.classList.add('other-page');
     document.getElementById('serviceImage').src = imagePath;
-    document.getElementById('serviceText').innerText = 'You selected ${serviceName}';
+    document.getElementById('serviceText').innerText = `You selected ${serviceName}`;
     document.getElementById('header').style.display = 'none';
     document.getElementById('footer').style.display = 'block';
     document.querySelector('nav').style.display = 'none';
