@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -116,7 +115,7 @@ body.other-page .back-btn {
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
